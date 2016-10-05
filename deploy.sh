@@ -12,6 +12,6 @@ echo "Moving files to server: $HOST"
 # -z for compressing during transfer
 # -r for recursive copy
 # -v for verbosity (info during transfer)
-rsync -z -r -v $CURRENTDIR/config $CURRENTDIR/app
+rsync -z -r -v $CURRENTDIR/config $CURRENTDIR/app $USERNAME@$HOST:htdocs/$PROJECT_FOLDER
 
 echo "Sync done!"
